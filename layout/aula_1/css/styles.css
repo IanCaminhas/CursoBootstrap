@@ -45,7 +45,7 @@ xl >= 1200px lg é a classe do Bootstrap.
 */
 @media (min-width: 1200px) {
     h1 {
-        color: yellow;
+        color: gold;
     }
 }
 
