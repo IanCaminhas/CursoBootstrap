@@ -72,3 +72,44 @@ xl >= 1400px lg é a classe do Bootstrap.
 .container-fluid {
     background-color: #888;
 }
+
+/* container breakpoint */
+
+.container-sm {
+    margin-bottom: 30px;
+    border: 2px solid blue;
+}
+
+.container-md {
+    margin-bottom: 30px;
+    border: 2px solid crimson;
+}
+
+.container-lg {
+    margin-bottom: 30px;
+    border: 2px solid chocolate;
+}
+
+/* GRID */
+
+.container {
+    border: 5px dotted blue;
+    padding: 10px;
+    margin-bottom: 300px;
+}
+
+.row {
+    border: 5px solid purple;
+    height: 100px;
+    padding: 10px;
+    margin: 0;
+}
+
+.col {
+    border: 2px dashed red;
+    height: 100%;
+    margin: 0;
+}
+
+/* Término GRID */
+
