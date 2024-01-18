@@ -90,8 +90,7 @@ xl >= 1400px lg é a classe do Bootstrap.
     border: 2px solid chocolate;
 }
 
-/* GRID */
-
+/* Início GRID */
 .container {
     border: 5px dotted blue;
     padding: 10px;
@@ -105,11 +104,17 @@ xl >= 1400px lg é a classe do Bootstrap.
     margin: 0;
 }
 
-.col {
+.col, 
+.col-4, 
+.col-2,
+.col-1,
+.col-11 {
     border: 2px dashed red;
     height: 100%;
     margin: 0;
 }
-
 /* Término GRID */
 
+#largura-limitada {
+    max-width: 500px;
+}
