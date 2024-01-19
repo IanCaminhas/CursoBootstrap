@@ -145,17 +145,6 @@
         <!--Alinhamento de item individual-->
         <div class="container vertical">
             <div class="row">
-                <div class="col-4"></div>
-                <!--Apenas esse item no centro-->
-                <div class="col-4 align-self-center"></div>
-                <!--Apenas esse item no final-->
-                <div class="col-4"></div>
-            </div>
-        </div>
-
-        <!--Alinhamento de item individual-->
-        <div class="container vertical">
-            <div class="row">
                 <div class="col-3"></div>
                 <!--Apenas esse item no centro-->
                 <div class="col-3 align-self-center"></div>
@@ -165,7 +154,86 @@
             </div>
         </div>
 
+          <!--Alinhamento de item individual-->
+          <div class="container vertical">
+            <div class="row">
+                <div class="col-4"></div>
+                <!--Apenas esse item no centro-->
+                <div class="col-4 align-self-center"></div>
+                <!--Apenas esse item no final-->
+                <div class="col-4 align-self-end"></div>
+            </div>
+        </div>
 
+        <!--Ordem-->
+        <div class="container vertical">
+            <div class="row">
+                <!--Por padrão, a posição seria: 3,1,4,2
+                    Como uso a classe order, a posição agora é: 1,2,3,4.
+                -->
+                <div class="col-3 order-3">3</div>
+                <div class="col-3 order-1">1</div>
+                <div class="col-3 order-4">4</div>
+                <div class="col-3 order-2">2</div>
+            </div>
+        </div>
 
+        <div class="container vertical">
+            <div class="row">
+                <!--Por padrão, a posição das grids seria: 3,1,4,2
+                    Como uso a classe order, a posição das grids agora é: 
+                    1 em cima, logo em seguida o 2, depois o 3 e, por fim, o 4.
+                    1
+                    2
+                    3
+                    4
+                -->
+                <div class="col-sm-12 col-3 order-3">3</div>
+                <div class="col-sm-12 col-3 order-1">1</div>
+                <div class="col-sm-12 col-3 order-4">4</div>
+                <div class="col-sm-12 col-3 order-2">2</div>
+            </div>
+        </div>
+
+        <!--Offset-->
+        <div class="container vertical" id="offset">
+            <div class="row">
+                <!--Isso é um espaçamento de 1 na esquerda-->
+                <div class="col-md-3 offset-md-1"></div>
+            </div>
+            <div class="row">
+                <!--Isso é um espaçamento de 2 na esquerda-->
+                <div class="col-md-3 offset-md-2"></div>
+            </div>
+            <div class="row">
+                <!--Isso é um espaçamento de 3 na esquerda-->
+                <div class="col-md-3 offset-md-3"></div>
+            </div>
+            <div class="row">
+                <!--Isso é um espaçamento de 4 na esquerda-->
+                <div class="col-md-3 offset-md-4"></div>
+            </div>
+            <div class="row">
+                <!--Isso é um espaçamento de 5 na esquerda-->
+                <div class="col-md-3 offset-md-5"></div>
+            </div>
+            <div class="row">
+                <!--Isso é um espaçamento de 6 na esquerda-->
+                <div class="col-md-3 offset-md-6"></div>
+            </div>
+            <div class="row">
+                <!--Isso é um espaçamento de 7 na esquerda-->
+                <div class="col-md-3 offset-md-7"></div>
+            </div>
+            <div class="row">
+                <!--Isso é um espaçamento de 8 na esquerda-->
+                <div class="col-md-3 offset-md-8"></div>
+            </div>
+            <div class="row">
+                <!--Isso é um espaçamento de 9 na esquerda-->
+                <div class="col-md-3 offset-md-9"></div>
+            </div>
+        </div>
+       
     </body>
 </html>

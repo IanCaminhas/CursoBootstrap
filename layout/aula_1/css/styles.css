@@ -138,3 +138,14 @@ xl >= 1400px lg é a classe do Bootstrap.
     height: 50px;
 }
 
+/* offset */
+#offset {
+   height: auto; 
+}
+
+#offset .col-md-3 {
+    height: 50px;
+    border: 2px solid red;
+}
+
+
