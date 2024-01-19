@@ -148,4 +148,20 @@ xl >= 1400px lg é a classe do Bootstrap.
     border: 2px solid red;
 }
 
+/*fim offset*/
+
+/* gutter */
+
+#gutter .row {
+    height: 200px;
+}
+
+#gutter .col-6 {
+    height: 50px;
+}
+
+.row p {
+    border: 2px solid green;
+}
+
 
