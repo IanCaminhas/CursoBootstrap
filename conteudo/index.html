@@ -18,6 +18,36 @@
         <p class="h1">Parágrafo heading</p>
         <span class="h3">Meu span heading</span>
 
+        <!--Display-->
+        <div class="display-1">Chamando a atenção</div>
+        <div class="display-1">Este é o subtítulo</div>
 
+        <!--Elementos inline-->
+        <!--
+            Posso mudar a estilização do mark através do CSS.
+            O HTML tem um padrão para esse tipo de destacamento. O Bootstrap foi lá e deu uma
+            leve modificada para ficar mais agradável.
+        -->
+        <!--tag <mark> tem valor semântico. Esse é o estilo de quando estamos buscando SEO.
+            tag <mark> o BS mexeu um pouco.-->
+        <p>Precisamos <mark>destacar isso aqui</mark> para vender este produto!</p>
+        <!--
+            Quando utilizo um elemento inline e não possui valor semântico para a página, vou estar utilizando um span.
+            span é como se fosse uma div
+        -->
+        <!--<span class="mark"> não possui valor semântico.
+            Utilizo para visualizar estilo ou quando estou com dúvidas se vai impactar negativamente -->
+        <p>Precisamos <span class="mark">destacar isso aqui</span> para vender este produto!</p>
+
+        <p>Lista de tarefas:</p>
+        <!--Bootstrap não fez modficação para a tag <del>.
+            Essa tag é uma funcionalidade semântica para visualizar textos removidos -->
+        <p><del>Funcionalidade A</del></p>
+        <!--Isso aqui é uma regra de CSS e o BS criou uma classe pra isso que bota em line-through-->
+        <p><span class="text-decoration-line-through">Funcionalidade B</span></p>
+        <p>Funcionalidade C</p>
+
+        <!--Quero frisar de forma semântica que desejo dar um foco para o texto do produto X-->
+        <p>O <strong>produto X</strong> é o melhor do mercado!</p>
     </body>
 </html>
