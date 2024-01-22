@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="neg">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validações</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Validações de Formulários</title>
+        <script src="js/scripts.js" defer></script>
+    </head>
+    <body>
+
+        <!--Validação Bootstrap-->
+        <div class="container">
+            <div class="row justify-content-center m-4">
+                <div class="col-6">
+                    <h2>Faça o login para continuar:</h2>
+                    <!--Se eu não colocar o novalidate, vai ser a validação do próprio HTML.
+                        novalidate, a validação do Bootstrap
+                    -->
+                    <form class="row needs-validation" novalidate>
+                        <div class="col-12 mb-4">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Digite o seu e-mail" required>
+                            <!--Para ativar esse feedback, preciso estar com a cláusula novalidate -->
+                            <div class="valid-feedback">
+                                Ok
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <label for="password" class="form-label">Senha:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Digite a sua senha" required>
+                            <div class="valid-feedback">
+                                Ok
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <button class="btn btn-primary" type="submit">Entrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+           <!--Validação HTML-->
+           <div class="container">
+            <div class="row justify-content-center m-4">
+                <div class="col-6">
+                    <h2>Faça o login para continuar:</h2>
+                    <form class="row">
+                        <div class="col-12 mb-4">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Digite o seu e-mail" required>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <label for="password" class="form-label">Senha:</label>
+                            <!--minlength="5" quero que o campo de senha tenha no mínio 5 dígitos-->
+                            <input type="password" class="form-control" id="password" placeholder="Digite a sua senha" required minlength="5">
+                        </div>
+                        <div class="col-12 mb-4">
+                            <button class="btn btn-primary" type="submit">Entrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
