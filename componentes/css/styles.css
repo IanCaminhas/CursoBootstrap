@@ -1,3 +1,12 @@
 body {
     padding-bottom: 500px;
 }
+
+/* Limitando a largura do card em 200px*/
+.card {
+    width: 200px;
+}
+
+#card-banner {
+    width: 800px;
+}

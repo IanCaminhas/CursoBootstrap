@@ -187,8 +187,13 @@
        <!-- Buttons -->
        <div class="container">
         <div class="mb-4">
+            <!--Com outline, a borda e o texto do botão ficam coloridos
+            Quando passo o mouse ou clico no botão, a letra fica branca e 
+            o botão fica na cor correspondente à classe-->
             <button class="btn btn-primary">Botão</button>
+            <button class="btn btn-outline-primary">Botão</button>
             <button class="btn btn-success">Entrar</button>
+            <button class="btn btn-outline-success">Entrar</button>
             <button class="btn btn-info">Entrar</button>
         </div>
         <div class="mb-4">
@@ -205,5 +210,381 @@
             <button class="btn btn-warning" disabled>Desabilitado</button>
         </div>
        </div>
+
+       <!--Button group-->      
+       <div class="container mb-4">
+            <h2>Configure a seção:</h2>
+            <div class="btn-group" role="group" aria-label="Exemplo">
+                <button class="btn btn-success" type="button">Diminuir</button>
+                <button class="btn btn-success" type="button">Confirmar</button>
+                <button class="btn btn-success" type="button">Aumentar</button>
+            </div>
+            <!--Como se fosse uma paginação-->
+            <div class="btn-group" role="group" aria-label="Exemplo">
+                <button class="btn btn-outline-secondary" type="button">1</button>
+                <button class="btn btn-outline-secondary" type="button">2</button>
+                <button class="btn btn-outline-secondary" type="button">3</button>
+                <button class="btn btn-outline-secondary" type="button">4</button>
+            </div>
+
+            <h2>Vertical</h2>
+            <div class="btn-group-vertical" role="group" aria-label="Exemplo 3">
+                <button class="btn btn-warning" role="button">Opção 1</button>
+                <button class="btn btn-warning" role="button">Opção 2</button>
+                <button class="btn btn-warning" role="button">Opção 3</button>
+            </div>
+       </div>
+
+          <!--Card-->
+          <div class="container mb-4">
+            <div class="card mb-4">
+                <img 
+                    src="https://via.placeholder.com/300" 
+                    alt="Minha imagem" 
+                    class="card-img-top" 
+                    />
+            <div class="card-body">
+                <p class="card-text">Esta é a descrição do produto.</p>
+            </div>
+            </div>
+
+            <div class="card mb-4">
+                <img 
+                    src="https://via.placeholder.com/300" 
+                    alt="Minha imagem" 
+                    class="card-img-top" 
+                    />
+            <div class="card-body">
+                <h5 class="card-title">Título do Card</h5>
+                <p class="card-text">Esta é a descrição do produto.</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+            </div>
+
+            <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Título do Card</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Um subtítulo</h6>
+                <p class="card-text">Esta é a descrição do produto.</p>
+                <a href="#" class="card-link">Comprar</a>
+                <a href="#" class="card-link">Cancelar</a>
+            </div>
+            </div>
+
+            <div class="card text-center" id="card-banner">
+                <div class="card-header">
+                    Card Banner
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Um título legal</h5>
+                    <p class="card-text">Esta é a descrição deste banner, vamos colocar uma grande 
+                    descrição aqui.</p>
+                    <a href="#" class="btn btn-success">Acessar oferta</a>
+                </div>
+                <div class="card-footer text-muted">
+                    Faltam 2 dias
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="container mb-4">
+            <div class="col-8">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <!-- data-bs-slide-to="0",ou seja,Quando clicar o botão, vou para o primeiro slide-->
+                        <button 
+                            class="active" 
+                            type="button" 
+                            data-bs-target="#carousel"
+                            data-bs-slide-to="0" 
+                            aria-current="true" 
+                            aria-label="Slide 1"
+                            ></button>
+                        <button  
+                            type="button" 
+                            data-bs-target="#carousel"
+                            data-bs-slide-to="1" 
+                            aria-current="true" 
+                            aria-label="Slide 2"
+                            ></button>
+                        <button 
+                            type="button" 
+                            data-bs-target="#carousel"
+                            data-bs-slide-to="2" 
+                            aria-current="true" 
+                            aria-label="Slide 3"
+                            ></button>
+                    </div>
+                    <!--Esse é o conteúdo do carousel-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img 
+                                src="https://via.placeholder.com/600" 
+                                alt="Descrição 1"
+                                class="d-block w-100"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img 
+                                src="https://via.placeholder.com/600" 
+                                alt="Descrição 2"
+                                class="d-block w-100"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img 
+                                src="https://via.placeholder.com/600" 
+                                alt="Descrição 3"
+                                class="d-block w-100"
+                            />
+                        </div>
+                    </div>
+                    <!--Outros botões que representam outras etapas do meu slider-->
+                    <button 
+                        class="carousel-control-prev"  
+                        type="button"   
+                        data-bs-target="#carousel"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button 
+                    class="carousel-control-next"  
+                    type="button"   
+                    data-bs-target="#carousel"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+            </div>
+        </div>
+
+         <!-- Slider com Texto -->
+         <div class="container mb-4">
+            <div class="col-8">
+                <!---->
+                <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <!-- data-bs-slide-to="0",ou seja,Quando clicar o botão, vou para o primeiro slide-->
+                        <button 
+                            class="active" 
+                            type="button" 
+                            data-bs-target="#carousel2"
+                            data-bs-slide-to="0" 
+                            aria-current="true" 
+                            aria-label="Slide 1"
+                            ></button>
+                        <button  
+                            type="button" 
+                            data-bs-target="#carousel2"
+                            data-bs-slide-to="1" 
+                            aria-current="true" 
+                            aria-label="Slide 2"
+                            ></button>
+                        <button 
+                            type="button" 
+                            data-bs-target="#carousel"
+                            data-bs-slide-to="2" 
+                            aria-current="true" 
+                            aria-label="Slide 3"
+                            ></button>
+                    </div>
+                    <!--Esse é o conteúdo do carousel-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img 
+                                src="https://via.placeholder.com/600" 
+                                alt="Descrição 1"
+                                class="d-block w-100"
+                            />
+                        </div>
+                        <!--Texto ao carousel-->
+                        <div class="carousel-caption">
+                            <h5>Primeiro slide</h5>
+                            <p>Alguma descrição</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img 
+                                src="https://via.placeholder.com/600" 
+                                alt="Descrição 2"
+                                class="d-block w-100"
+                            />
+                            <div class="carousel-caption">
+                                <h5>Segundo slide</h5>
+                                <p>Alguma descrição</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img 
+                                src="https://via.placeholder.com/600" 
+                                alt="Descrição 3"
+                                class="d-block w-100"
+                            />
+                            <div class="carousel-caption">
+                                <h5>Terceiro slide</h5>
+                                <p>Alguma descrição</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Outros botões que representam outras etapas do meu slider-->
+                    <button 
+                        class="carousel-control-prev"  
+                        type="button"   
+                        data-bs-target="#carousel2"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button 
+                    class="carousel-control-next"  
+                    type="button"   
+                    data-bs-target="#carousel2"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+            </div>
+        </div>
+
+        <!--Close button-->
+        <div class="container mb-4">
+            <p>
+                Clique para fechar 
+                <button class="btn-close" type="button" aria-label="Close"></button>
+            </p>
+            <a href="#" class="btn btn-danger">
+                Fechar
+                <button class="btn-close" type="button" aria-label="Close"></button>
+            </a>
+               <!--Desabilitada-->
+            <p>
+               Clique para fechar 
+                <button 
+                    class="btn-close" 
+                    type="button" 
+                    aria-label="Close" 
+                    disabled
+                ></button>
+            </p>
+        </div>
+
+        <!--Collapse-->
+        <div class="container mb-4">
+            <!--data-bs-target="#collapse" precisa de um id.
+            Esse id se encontra em <div class="collapse" id="collapse">-->
+            <button 
+                class="btn btn-primary" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapse"
+                aria-expanded="false"
+                aria-controls="collapse"
+                >Clique para exbir/esconder
+            </button>
+            <div class="collapse" id="collapse">
+                <div class="col-12 mt-4">
+                    Este é o texto que pode ser exbido ou não, 
+                    dependendo do clique do botão.
+                </div>
+            </div>
+        </div>
+
+        <!-- Drop down-->
+        <div class="container mb-4">
+            <div class="dropdown mb-4">
+                <!--Item que dispara o evento do dropdown-->
+                <a href="#" class="btn btn-secondary dropdown-toggle" role="button" 
+                id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Clique aqui
+                </a>
+                <!--
+                    aria-labelledby="dropdown" -> Vai ser classficado por quem ? dropdown id-->
+                <ul class="dropdown-menu" aria-labelledby="dropdown">
+                    <li><a href="" class="dropdown-item">Link 1</a></li>
+                    <li><a href="" class="dropdown-item">Link 2</a></li>
+                    <li><a href="" class="dropdown-item">Link 3</a></li>
+                    <li><a href="" class="dropdown-item">Link 4</a></li>
+                </ul>
+            </div>
+            <!--A DIREITA-->
+            <!--dropend fica à direita-->
+            <div class="dropdown mb-4 dropend">
+                <a href="#" class="btn btn-secondary dropdown-toggle" role="button" 
+                id="dropdown-direita" data-bs-toggle="dropdown" aria-expanded="false">
+                    Clique aqui
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-direita">
+                    <li><a href="" class="dropdown-item">Link 1</a></li>
+                    <li><a href="" class="dropdown-item">Link 2</a></li>
+                    <li><a href="" class="dropdown-item">Link 3</a></li>
+                    <li><a href="" class="dropdown-item">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Modal-->
+        <div class="container mb-4">
+        <!--Com data-bs-target="#modal", vou abrir o modal que estiver com o id="modal"-->
+            <button 
+                class="btn btn-info" 
+                type="button" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modal"
+            >
+            Abrir Modal
+            </button>
+        </div>
+
+        <!--Container modal-->
+        <!--Fade é o fundo atrás-->
+        <div 
+            class="modal fade" 
+            id="modal" 
+            tabindex="-1" 
+            aria-labelledby="modalLabel" 
+            aria-hidden="true"
+        >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--id="modalLabel" é do  aria-labelledby="modalLabel"
+                        class="modal-title" é a descrição do modal
+                    -->
+                    <h5 class="modal-title" id="modalLabel">Este é um título</h5>
+                    <!--data-bs-dismiss="modal" => O que vai remover ? o modal-->
+                    <button 
+                        class="btn-close" 
+                        type="button" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <!--Corpo do modal-->
+                <div class="modal-body">
+                    <p>Aqui você pode por qualquer coisa?</p>
+                    <p>Tá bom?</p>
+                </div>
+                <!--Aqui pode ser as ações: cancelar, salvar, fechar-->
+                <div class="modal-footer">
+                    <button 
+                        class="btn btn-secondary" 
+                        type="button" 
+                        data-bs-dismiss="modal"
+                    >
+                    Fechar
+                    </button>
+                    <button class="btn btn-success" type="button">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </body>
 </html>
