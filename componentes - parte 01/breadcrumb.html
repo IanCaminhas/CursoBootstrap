@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="neg">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+            crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+            crossorigin="anonymous"
+            defer>
+        </script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+       <!--Breadcrumb-->
+       <div class="container">
+        <nav class="aria-label creadcrumb">
+            <!--No caso aqui, o usuário passou pela Home, depois passou em Catálogo e por fim está em Página de produto 
+            Precisaria de um back-end para alterar o estado. 
+            O exemplo aqui foi o estado atual de uma interação.
+            Página de produto ainda não fica azul/sublinhado
+            -->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Catálogo</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    Página de produto
+                </li>
+            </ol>
+        </nav>
+        <h2>Página de produto</h2>
+        <p>Descrição do produto</p>
+       </div>
+    </body>
+</html>

@@ -3,3 +3,16 @@
     color: green;
     margin: 20px;
 }
+
+.bi {
+    font-size: 60px; 
+}
+
+.red {
+    color: red;
+    background-color: blue; /* Isso aqui é para o fundo que concide com a seta  */
+}
+
+.blue {
+    color: blue;
+}
